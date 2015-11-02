@@ -7,15 +7,44 @@ var React = require("react");
 var tpl = require('./application.html').load();
 var baseCss = require('../basic.css').load();
 var css = require('./application.css').load();
-var Application = (function (_super) {
-    __extends(Application, _super);
-    function Application() {
+var Explorer = (function (_super) {
+    __extends(Explorer, _super);
+    function Explorer() {
         _super.apply(this, arguments);
     }
-    Application.prototype.render = function () {
-        return React.createElement("div", {"id": "app", "className": "app unselectable"}, React.createElement("div", {"className": "panel-top"}), React.createElement("div", {"className": "panel-center"}, React.createElement("div", {"className": "panel panel-project"}, React.createElement("explorer", null)), React.createElement("div", {"className": "splitter splitter0"}), React.createElement("div", {"className": "panel panel-hierarchy"}, React.createElement("hierarchy", null)), React.createElement("div", {"className": "splitter splitter1"}), React.createElement("div", {"className": "panel panel-component"}, React.createElement("inspector", null)), React.createElement("div", {"className": "splitter splitter2"}), React.createElement("div", {"className": "panel panel-visual-editor"}, React.createElement("visual", null))), React.createElement("div", {"className": "dialog-container"}, React.createElement("component-selector", null)));
+    Explorer.prototype.render = function () {
+        return React.createElement("div", null, "explorer");
     };
-    return Application;
+    return Explorer;
 })(React.Component);
-module.exports = Application;
+var Hierarchy = (function (_super) {
+    __extends(Hierarchy, _super);
+    function Hierarchy() {
+        _super.apply(this, arguments);
+    }
+    Hierarchy.prototype.render = function () {
+        return React.createElement("div", null, "hierarchy");
+    };
+    return Hierarchy;
+})(React.Component);
+var Visual = (function (_super) {
+    __extends(Visual, _super);
+    function Visual() {
+        _super.apply(this, arguments);
+    }
+    Visual.prototype.render = function () {
+        return React.createElement("div", null, "visual");
+    };
+    return Visual;
+})(React.Component);
+var Inspector = (function (_super) {
+    __extends(Inspector, _super);
+    function Inspector() {
+        _super.apply(this, arguments);
+    }
+    Inspector.prototype.render = function () {
+        return React.createElement("div", null, "Inspector", React.createElement("div", null, ";" + ' ' + "}" + ' ' + "}" + ' ' + "class Application extends React.Component", React.createElement(Props, null), "> ", render(), "return  ", React.createElement("div", {"id": "app", "className": "app unselectable"}, React.createElement("div", {"className": "panel-top"}), React.createElement("div", {"className": "panel-center"}, React.createElement("div", {"className": "panel panel-project"}, React.createElement(Explorer, null)), React.createElement("div", {"className": "splitter splitter0"}), React.createElement("div", {"className": "panel panel-hierarchy"}, React.createElement(Hierarchy, null)), React.createElement("div", {"className": "splitter splitter1"}), React.createElement("div", {"className": "panel panel-component"}, React.createElement(Inspector, null)), React.createElement("div", {"className": "splitter splitter2"}), React.createElement("div", {"className": "panel panel-visual-editor"}, React.createElement(Visual, null))), React.createElement("div", {"className": "dialog-container"}, React.createElement("component-selector", null))), ";" + ' ' + "}" + ' ' + "}" + ' ' + "export = Application;"));
+    };
+    return Inspector;
+})(React.Component);
 //# sourceMappingURL=Application.js.map

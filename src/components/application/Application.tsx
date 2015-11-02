@@ -4,50 +4,70 @@ import $ = require('jquery');
 
 import React = require("react");
 
+declare module JSX {
+  interface ElementClass {
+    render: any;
+  }
+}
+
 const tpl = require('./application.html').load();
 const baseCss = require('../basic.css').load();
 const css = require('./application.css').load();
 
 interface Props extends React.Props<Application> {
-    hello: string;
-    world?: string;
-    bar: boolean;
+
 }
 
-interface State {
-    inputValue?: string;
-    seconds?: number;
+class Explorer extends React.Component<Props,{}>{
+  render(){
+    return <div>explorer</div>;
+  }
 }
 
+class Hierarchy extends React.Component<Props,{}>{
+  render(){
+    return <div>hierarchy</div>;
+  }
+}
 
-class Application extends React.Component<Props, {}> {
+class Visual extends React.Component<Props,{}>{
+  render(){
+    return <div>visual</div>;
+  }
+}
+
+class Inspector extends React.Component<Props,{}>{
+  render(){
+    return <div>Inspector<div>;
+  }
+}
+
+class Application extends React.Component<Props,{}> {
   render() {
     return  <div id="app" className="app unselectable">
                 <div className="panel-top">
                 </div>
                 <div className="panel-center">
                     <div className="panel panel-project">
-                        <explorer />
+                        <Explorer />
                     </div>
                     <div className="splitter splitter0" />
                     <div className="panel panel-hierarchy">
-                        <hierarchy />
+                        <Hierarchy />
                     </div>
                     <div className="splitter splitter1" />
                     <div className="panel panel-component">
-                        <inspector />
+                        <Inspector />
                     </div>
                     <div className="splitter splitter2" />
                     <div className="panel panel-visual-editor">
-                        <visual />
+                        <Visual />
                     </div>
                 </div>
                 <div className="dialog-container">
                     <component-selector />
                 </div>
-            </div>
-
-;
+            </div>;
   }
 }
 
