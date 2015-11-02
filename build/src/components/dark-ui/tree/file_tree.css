@@ -1,0 +1,2 @@
+var style = {load:function(){ return ".file_tree {\n  background: red;\n  width: 1000px;\n}\n"}};
+module.exports = style;

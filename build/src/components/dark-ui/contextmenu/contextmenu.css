@@ -1,0 +1,2 @@
+var style = {load:function(){ return "contextmenu,\n.contextmenu {\n  z-index: 100;\n}\n"}};
+module.exports = style;

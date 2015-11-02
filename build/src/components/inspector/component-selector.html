@@ -1,0 +1,2 @@
+var t = {load:function(){ return "<ide-dialog title=\"Component Selector\" class=\"component-selector\" (^click)=\"onClick($event)\">\r\n  <div  class=\"component-list\">\r\n      <div\r\n        *ng-for=\"#name of getComponentNames(); #i = index\"\r\n        class=\"item\"\r\n        (click)=\"onItemClick($event)\"\r\n        (dblclick)=\"onItemDblClick($event)\"\r\n        >{{name}}</div>\r\n  </div>\r\n</ide-dialog>\r\n"}};
+module.exports = t;

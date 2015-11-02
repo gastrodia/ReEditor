@@ -1,0 +1,2 @@
+var style = {load:function(){ return "json-dialog {\n  width: 100%;\n  height: 100%;\n  top: 0;\n  position: fixed;\n  left: 50%;\n  z-index: 1000;\n}\njson-dialog section {\n  display: -webkit-flex;\n  -webkit-flex-direction: column;\n}\njson-dialog .editor-wrap {\n  position: relative;\n  -webkit-flex: 1;\n}\njson-dialog .editor-wrap .editor {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n"}};
+module.exports = style;

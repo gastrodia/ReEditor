@@ -1,0 +1,2 @@
+var style = {load:function(){ return ".component-list {\n  width: 100%;\n  overflow: auto;\n}\n.component-list .item {\n  padding: 5px 5px 5px 5px;\n  padding-left: 20px;\n  color: #99a5b4;\n  font-size: 14px;\n  font-family: 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;\n  cursor: pointer;\n  user-select: none;\n}\n.component-list .item:hover {\n  background-color: #343f49;\n  color: #ffffff;\n}\n.component-list .item.selected {\n  color: #ffffff;\n  background-color: #2c86ff;\n}\n"}};
+module.exports = style;

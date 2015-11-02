@@ -1,0 +1,2 @@
+var style = {load:function(){ return "inspector {\n  width: 100%;\n}\ninspector .add-comp-btns button {\n  margin: 20px auto;\n  padding: 8px 14px 8px 14px;\n  font-size: 12px;\n  display: block;\n}\ninspector .add-comp-btns button:before {\n  content: \"\\271A\";\n  float: left;\n  width: 1em;\n  margin: 0 0.5em 0 -0.5em;\n}\n"}};
+module.exports = style;

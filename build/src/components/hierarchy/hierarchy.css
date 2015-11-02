@@ -1,0 +1,2 @@
+var style = {load:function(){ return ".hierarchy {\n  position: relative;\n}\n"}};
+module.exports = style;
