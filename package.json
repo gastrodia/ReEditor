@@ -1,0 +1,31 @@
+{
+  "name": "re-editor",
+  "main": "./build/src/waspUIEditor",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "repository": "https://github.com/atom/wasp-ui-editor",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "amd-loader": "0.0.5",
+    "atom-space-pen-views": "^2.1.0",
+    "eventemitter3": "^1.1.1",
+    "fast-json-patch": "",
+    "gulp-typescript": "",
+    "nedb": "^1.1.4",
+    "reflect-metadata": "^0.1.2",
+    "systemjs": "^0.19.4",
+    "typescript": "",
+    "watchjs": ""
+  },
+  "devDependencies": {
+    "gulp": "",
+    "gulp-less": "",
+    "run-sequence": "",
+    "through2": "",
+    "wrappy": "^1.0.1"
+  }
+}
