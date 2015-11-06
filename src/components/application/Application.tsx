@@ -38,7 +38,13 @@ class Visual extends React.Component<Props,{}>{
 
 class Inspector extends React.Component<Props,{}>{
   render(){
-    return <div>Inspector<div>;
+    return <div>Inspector</div>;
+  }
+}
+
+class ComponentSelector extends React.Component<Props,{}>{
+  render(){
+    return <div>ComponentSelector</div>;
   }
 }
 
@@ -65,7 +71,7 @@ class Application extends React.Component<Props,{}> {
                     </div>
                 </div>
                 <div className="dialog-container">
-                    <component-selector />
+                    <ComponentSelector />
                 </div>
             </div>;
   }

@@ -43,8 +43,29 @@ var Inspector = (function (_super) {
         _super.apply(this, arguments);
     }
     Inspector.prototype.render = function () {
-        return React.createElement("div", null, "Inspector", React.createElement("div", null, ";" + ' ' + "}" + ' ' + "}" + ' ' + "class Application extends React.Component", React.createElement(Props, null), "> ", render(), "return  ", React.createElement("div", {"id": "app", "className": "app unselectable"}, React.createElement("div", {"className": "panel-top"}), React.createElement("div", {"className": "panel-center"}, React.createElement("div", {"className": "panel panel-project"}, React.createElement(Explorer, null)), React.createElement("div", {"className": "splitter splitter0"}), React.createElement("div", {"className": "panel panel-hierarchy"}, React.createElement(Hierarchy, null)), React.createElement("div", {"className": "splitter splitter1"}), React.createElement("div", {"className": "panel panel-component"}, React.createElement(Inspector, null)), React.createElement("div", {"className": "splitter splitter2"}), React.createElement("div", {"className": "panel panel-visual-editor"}, React.createElement(Visual, null))), React.createElement("div", {"className": "dialog-container"}, React.createElement("component-selector", null))), ";" + ' ' + "}" + ' ' + "}" + ' ' + "export = Application;"));
+        return React.createElement("div", null, "Inspector");
     };
     return Inspector;
 })(React.Component);
+var ComponentSelector = (function (_super) {
+    __extends(ComponentSelector, _super);
+    function ComponentSelector() {
+        _super.apply(this, arguments);
+    }
+    ComponentSelector.prototype.render = function () {
+        return React.createElement("div", null, "ComponentSelector");
+    };
+    return ComponentSelector;
+})(React.Component);
+var Application = (function (_super) {
+    __extends(Application, _super);
+    function Application() {
+        _super.apply(this, arguments);
+    }
+    Application.prototype.render = function () {
+        return React.createElement("div", {"id": "app", "className": "app unselectable"}, React.createElement("div", {"className": "panel-top"}), React.createElement("div", {"className": "panel-center"}, React.createElement("div", {"className": "panel panel-project"}, React.createElement(Explorer, null)), React.createElement("div", {"className": "splitter splitter0"}), React.createElement("div", {"className": "panel panel-hierarchy"}, React.createElement(Hierarchy, null)), React.createElement("div", {"className": "splitter splitter1"}), React.createElement("div", {"className": "panel panel-component"}, React.createElement(Inspector, null)), React.createElement("div", {"className": "splitter splitter2"}), React.createElement("div", {"className": "panel panel-visual-editor"}, React.createElement(Visual, null))), React.createElement("div", {"className": "dialog-container"}, React.createElement(ComponentSelector, null)));
+    };
+    return Application;
+})(React.Component);
+module.exports = Application;
 //# sourceMappingURL=Application.js.map
